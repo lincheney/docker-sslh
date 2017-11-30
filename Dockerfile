@@ -12,7 +12,7 @@ RUN BUILD_DEPS="gcc pcre-dev musl-dev make"; \
     make sslh && \
     cp ./sslh-fork ./sslh-select /bin && \
     cp COPYING / && \
-    ln /bin/sslh-fork /bin/sslh && \
+    ln /bin/sslh-select /bin/sslh && \
     apk del $BUILD_DEPS && \
     cd / && rm -rf /tmp/sshl*
 
