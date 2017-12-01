@@ -16,4 +16,4 @@ RUN BUILD_DEPS="gcc pcre-dev musl-dev make"; \
     apk del $BUILD_DEPS && \
     cd / && rm -rf /tmp/sshl*
 
-ENTRYPOINT ["sshl", "-f"]
+ENTRYPOINT ["sslh", "-f"]
